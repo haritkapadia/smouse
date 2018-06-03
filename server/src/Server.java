@@ -3,7 +3,7 @@ import java.io.*;
 
 public class Server extends Thread {
 	private ServerSocket serverSocket;
-	InetAddress addr = InetAddress.getByName("100.64.165.195");
+	InetAddress addr = InetAddress.getByName("192.168.1.4");
 
 	public Server(int port) throws IOException {
 		serverSocket = new ServerSocket(port, 50, addr);
